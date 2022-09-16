@@ -7,34 +7,31 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <router-outlet></router-outlet>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 1</title>
-</head>
-<body class="image-fondo">
 
-    <h1>
-        {{title}}
-    </h1>
-    
-    <div style="text-align: center">
-        <!-- interpolación de las varibles -->
-        <h4>¡Hagan juego!</h4>
-        <app-dado>{{valor1}}</app-dado>
-        <app-dado>{{valor2}}</app-dado>
-        <app-dado>{{valor3}}</app-dado>
-        <h4>{{advice}}</h4>
-    
-        <hr>
-        <button (click)="tirar()">Tirar</button>
-        <hr>
-        <p>Resultado: {{resultado}}</p>
-    </div>
-    
+<body>
+
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+<div id="tilt" class="d-flex flex-row mb-3 justify-content-center">
+  <app-dado [valor]="valor1"></app-dado>
+  <app-dado [valor]="valor2"></app-dado>
+  <app-dado [valor]="valor3"></app-dado>
+</div>
+  <hr>
+  <div id="tilt2" class="d-flex flex-row mb-3 justify-content-center">
+    <button (click)="tirar()" >Tirar</button>
+  </div>
+  <hr>
+  <p id="tilt3" class="d-flex flex-row mb-3 justify-content-center">Resultado:&nbsp; {{resultado}}</p>
+
+    <!-- Footer -->
+
+    <footer id="tilt4">
+      <p>Author: Josep Martorell &nbsp;</p>
+      <p><a href="mailto:martorelljosep@gmail.com" style="color: yellow;">martorelljosep@gmail.com</a></p>
+    </footer>
+
 </body>
-</html>
-

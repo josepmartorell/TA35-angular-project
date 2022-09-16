@@ -1,4 +1,30 @@
-.image-fondo {
-    background-image: url("/assets/dices.jpg");
-    background-repeat: no-repeat;
+/* image background*/
+body{
+    background: url("../assets/dices.jpg");
+    background-repeat: no-repeat; 
+    background-color: green;
+    /*background-position: center center;*/
+
 }
+
+#tilt {
+    padding-top: 300px;
+    padding-right: 125px;
+  }
+
+  #tilt2 {
+    padding-top: 20px;
+    padding-right: 125px;
+  } 
+
+  #tilt3 {
+    padding-top: 20px;
+    padding-right: 120px;
+  }
+
+  #tilt4 {
+    margin-top: 80px;
+    padding-left: 17px;
+    padding-bottom: 40px;
+    }
+

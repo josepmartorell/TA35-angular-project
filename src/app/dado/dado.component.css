@@ -1,12 +1,13 @@
 .forma {
-    width: 5rem;
+    width: 5rem;  
     height: 5rem;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 3rem;
-    color: white;
-    background-color: black;
+    color:white;
+    background-color: red;
     border-radius: 1rem;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
-}
+    margin:10px;
+  }
